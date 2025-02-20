@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Section Styles */
+main {
+    padding: 20px;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+.service-item {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%; /* Adjust width for larger screens */
+    margin: 10px; /* Add margin for spacing */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Add transition for hover effect */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-item {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
